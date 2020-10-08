@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tesla</title>
+<link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
+	
+    <style>
+        body{
+        background-color:white;
+		background-image: url("../media/Tesla-back.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+        
+    </style>
+</head>
+
+<body>
+	
+	<div class="title">
+		<a href="../index.html"><img src="../media/tesla-logo.png" alt="Tesla Logo" ></a>
+		<ul class="navigation">
+			<li><a href="../pages/picture.html" >PICTURES</a></li>
+			<li><a href="../pages/video.html" >VIDEO</a></li>
+			<li><a href="../pages/text.html" >HISTORY</a></li>
+			<li><a href="../pages/audio.html" >SOUND</a></li>
+		</ul>
+	</div>
+	<div class="main">
+		<div class="polygon1">
+		
+		</div>
+		<div class="content">
+			<h1 style="margin: 20px; font-size: 3vw;letter-spacing: 0.8vw;font-weight: 100;">GALLERY</h1>
+			<div class="gallery">
+				<div class="tab">
+  					<button class="tablinks" onclick="openCar(event, 'S')" id="defaultOpen">Model S</button>
+  					<button class="tablinks" onclick="openCar(event, '3')">Model 3</button>
+  					<button class="tablinks" onclick="openCar(event, 'X')">Model X</button>
+					<button class="tablinks" onclick="openCar(event, 'Y')">Model Y</button>
+				</div>
+
+				<div id="S" class="tabcontent">
+					<img src="../media/model-s.jpg" alt="">
+  				</div>
+
+				<div id="3" class="tabcontent">
+					<img src="../media/model_3.jpg" alt="">
+  				</div>
+
+				<div id="X" class="tabcontent">
+					<img src="../media/model_x.jpg" alt="">
+  				</div>
+
+				<div id="Y" class="tabcontent">
+					<img src="../media/model_y.jpg" alt="">
+  				</div>
+		
+		</div>
+		
+		<div class="polygon2">
+		</div>
+	</div>
+	
+	<script>
+		function openCar(evt, carName) {
+  		var i, tabcontent, tablinks;
+  		tabcontent = document.getElementsByClassName("tabcontent");
+  		for (i = 0; i < tabcontent.length; i++) {
+   			tabcontent[i].style.display = "none";
+  		}
+  		tablinks = document.getElementsByClassName("tablinks");
+  		for (i = 0; i < tablinks.length; i++) {
+   			tablinks[i].className = tablinks[i].className.replace(" active", "");
+  		}
+  		document.getElementById(carName).style.display = "block";
+  		evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+</body>
+</html>

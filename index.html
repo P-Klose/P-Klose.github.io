@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Tesla</title>
+	<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.typekit.net/sts1nol.css">
+
+	<style>
+		body {
+			background-color: white;
+
+		}
+	</style>
+</head>
+
+<body>
+	<!--<div class="title">
+		<img src="media/tesla-logo.png" alt="logo">
+    </div>-->
+	<div class="title">
+		<a href="index.html">
+			<img src="media/tesla-logo.png" alt="Tesla Logo">
+			<img src="media/tesla_logo_T.png" alt="">
+		</a>
+
+	</div>
+
+	<div class="weblinks">
+
+
+		<a class="items" href="pages/picture.html">
+			<div class="theme">
+				<h1>P</h1>
+				<h1>I</h1>
+				<h1>C</h1>
+				<h1>T</h1>
+				<h1>U</h1>
+				<h1>R</h1>
+				<h1>E</h1>
+				<h1>S</h1>
+			</div>
+		</a>
+		<a class="items" href="pages/video.html">
+			<div class="theme">
+				<h1>V</h1>
+				<h1>I</h1>
+				<h1>D</h1>
+				<h1>E</h1>
+				<h1>O</h1>
+				<h1>S</h1>
+
+			</div>
+		</a>
+		<a class="items" href="pages/text.html">
+			<div class="theme">
+				<h1>H</h1>
+				<h1>I</h1>
+				<h1>S</h1>
+				<h1>T</h1>
+				<h1>O</h1>
+				<h1>R</h1>
+				<h1>Y</h1>
+			</div>
+		</a>
+		<a class="items" href="pages/audio.html">
+			<div class="theme">
+				<h1>S</h1>
+				<h1>O</h1>
+				<h1>U</h1>
+				<h1>N</h1>
+				<h1>D</h1>
+				<h1 style="margin: 0.5vw 0px"> </h1>
+				<h1>?</h1>
+			</div>
+		</a>
+
+
+
+
+	</div>
+	<script>
+		function openTab(evt, carName) {
+  		var i, tabcontent, tablinks;
+  		tabcontent = document.getElementsByClassName("tabcontent");
+  		for (i = 0; i < tabcontent.length; i++) {
+   			tabcontent[i].style.display = "none";
+  		}
+  		tablinks = document.getElementsByClassName("tablinks");
+  		for (i = 0; i < tablinks.length; i++) {
+   			tablinks[i].className = tablinks[i].className.replace(" active", "");
+  		}
+  		document.getElementById(carName).style.display = "block";
+  		evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+</body>
+
+</html>
