@@ -1,4 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    color: #fffcf2;
+    background-color: #252422;
+    font-family: 'Jost', sans-serif;
+}
 body{
-    margin: 0;
-    padding: 0;
+    height: 100vb;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+#subjekts-body{
+    flex-direction: row;
+}
+/* ****** Main ****** */
+.main-content{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+/* ****** Subjekts ****** */
+.subjekts{
+    height: 100vh;
+    width: 80vw;
+    border-left: solid 10px #CCC5B9;
+    display: flex;
+    flex-direction: column;
+    animation: sublist 4s 1;
+    
+}
+.subjekt-list{
+    animation: opacity 4s 1;
+    height: 100vh;
+}
+.subjekt-list h3{
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 2vw;
+    border-bottom: solid 3px #CCC5B9;
+}
+.subjekt-list h3:hover{
+    
+    border-bottom: solid 3px #eb5e28;
+    padding-bottom: 10px;
+}
+.subjekts h2{
+    background-color:  #CCC5B9;
+    width: 100vw;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 3.5vw;
+    letter-spacing: 0.5vw;
+    text-transform: uppercase;
+}
+
+.subjekts-content{
+    height: 100vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    justify-content: center;
+    animation: mysub 4s 1;
+    ;;
+}
+.subjekts-content .subjekts-h1{
+     font-size: 4vw;
+    font-family: 'Lato', sans-serif;
+    color: #fffcf2;
+    letter-spacing: 0.8vw;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.subjekts-content .subjekts-h1 #space{
+    
+    margin-bottom: 10vw;
+}
+.subjekts-content a{
+    /*background-color: #403d39;*/
+    height:40px;
+    padding: 8px 20px;
+    text-align: center;
+    color: #eb5e28;
+    text-decoration: none;
+    animation: link 3s 1;
+}
+.subjekts-content a{
+    text-decoration: none;
+}
+/* ****** h1 *******/
+.main-content .main-h1,.class-h1{
+    font-size: 5vw;
+    font-family: 'Lato', sans-serif;
+    color: #fffcf2;
+    letter-spacing: 0.8vw;
+    text-transform: uppercase;
+    text-align: center;
+    animation: text 4s 1;
+    
+}
+.main-content .not-h1{
+    font-size: 2.4vw;
+    font-family: 'Lato', sans-serif;
+    color: #fffcf2;
+    letter-spacing: 0.8vw;
+    text-transform: uppercase;
+    text-align: center;
+    animation: text 4s 1;
+    
+}
+/* ****** a ****** */
+.main-content a{
+    /*background-color: #403d39;*/
+    height:40px;
+    padding: 8px 20px;
+    text-align: center;
+    color: #eb5e28;
+    text-decoration: none;
+    animation: link 3s 1;
+}
+.main-content a{
+    text-decoration: none;
+}
+@keyframes text{
+        0%{
+            opacity: 0;
+            letter-spacing: -2vw;
+        }
+        
+        40%{
+            letter-spacing: 2.2vw;
+            
+        }
+        60%{opacity: 1;}
+        90%{
+            letter-spacing: 0.8vw;
+        
+        }
+}
+@keyframes link{
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes mysub{
+    0%{
+        width: 100vw;
+        
+    }
+    100%{
+        width: 20vw;
+    }
+}
+@keyframes sublist{
+    0%{
+        width: 0vw;
+    }
+    100%{
+        width: 80vw;
+    }
+}
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes hover{
+    0%{
+        border-bottom: solid 1px #CCC5B9;
+        padding-bottom: 10px;
+    }
+    100%{
+        border-bottom: solid 3px #eb5e28;
+        padding-bottom: 7px;
+    }
 }
