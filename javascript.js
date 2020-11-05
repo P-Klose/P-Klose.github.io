@@ -1,23 +1,32 @@
-let medtweb =''
-let notgiven ='<div style="height:100vh;with:100vw;display: flex;flex-direction: column;align-items: center;justify-content: center;"><h1 class="not-h1" style="text-align: center;">Sorry looks like this page <br>doesnt exist jet</h1><a onclick="default_sub()">Back to list</a></div>'
-let defaultsub = '<h3 onclick="medt_web()">MEDT Webtechnologie</h3><h3 onclick="medt_aud()">MEDT Audio</h3><h3 onclick="medt_vid()">MEDT Video</h3><h3 onclick="medt_fot()">MEDT Foto</h3><h3 onclick="syt()">SYT</h3><h3 onclick="sew()">SEW</h3><h3 onclick="math()">Mathematik</h3><h3 onclick="cprsw()">CPR SW</h3>'
+let medtin ='<div class="sub-list"><h3 onclick="medt_web()">Webtechnologie</h3><h3 onclick="medt_aud()">Audio</h3><h3 onclick="med_vid()">Video</h3><h3 onclick="medt_fot()">Fotografie</h3><h3 onclick="back()">Back</h3> </div>'
+let medtweb='<div class="sub-list"><h3 onclick="medt_web()"style="background-color: #eb5e28;">Webtechnologie</h3><h3 onclick="medt_aud()">Audio</h3><h3 onclick="med_vid()">Video</h3><h3 onclick="medt_fot()">Fotografie</h3><h3 onclick="back()">Back</h3> </div><div style="height:60vh;width:100vw;display: flex;flex-direction: column;align-items: center;justify-content: center;"><h1 class="not-h1" style="text-align: center;">Sorry looks like this page <br>doesnt exist jet</h1><a onclick="default_sub()">Back to list</a></div>'
+let medtaud='<div class="sub-list"><h3 onclick="medt_web()">Webtechnologie</h3><h3 onclick="medt_aud()"style="background-color: #eb5e28;">Audio</h3><h3 onclick="med_vid()">Video</h3><h3 onclick="medt_fot()">Fotografie</h3><h3 onclick="back()">Back</h3> </div><div style="height:60vh;width:100vw;display: flex;flex-direction: column;align-items: center;justify-content: center;"><h1 class="not-h1" style="text-align: center;">Sorry looks like this page <br>doesnt exist jet</h1><a onclick="default_sub()">Back to list</a></div>'
+let medtvid='<div class="sub-list"><h3 onclick="medt_web()">Webtechnologie</h3><h3 onclick="medt_aud()">Audio</h3><h3 onclick="med_vid()"style="background-color: #eb5e28;">Video</h3><h3 onclick="medt_fot()">Fotografie</h3><h3 onclick="back()">Back</h3> </div><div style="height:60vh;width:100vw;display: flex;flex-direction: column;align-items: center;justify-content: center;"><h1 class="not-h1" style="text-align: center;">Sorry looks like this page <br>doesnt exist jet</h1><a onclick="default_sub()">Back to list</a></div>'
+let medtfot='<div class="sub-list"><h3 onclick="medt_web()">Webtechnologie</h3><h3 onclick="medt_aud()">Audio</h3><h3 onclick="med_vid()">Video</h3><h3 onclick="medt_fot()"style="background-color: #eb5e28;">Fotografie</h3><h3 onclick="back()">Back</h3> </div><div style="height:60vh;width:100vw;display: flex;flex-direction: column;align-items: center;justify-content: center;"><h1 class="not-h1" style="text-align: center;">Sorry looks like this page <br>doesnt exist jet</h1><a onclick="default_sub()">Back to list</a></div>'
+let mathein=''
+
+let notgiven ='<div class="sub-list"><h3 onclick="medt()">MEDT</h3><h3 onclick="syt()">SYT</h3><h3 onclick="sew()">SEW</h3><h3 onclick="math()">AM</h3><h3 onclick="cpr()">CPR</h3> </div><div style="height:60vh;width:100vw;display: flex;flex-direction: column;align-items: center;justify-content: center;"><h1 class="not-h1" style="text-align: center;">Sorry looks like this page <br>doesnt exist jet</h1><a onclick="default_sub()">Back to list</a></div>'
+let backin = '<div class="sub-list"><h3 onclick="medt()">MEDT</h3><h3 onclick="syt()">SYT</h3><h3 onclick="sew()">SEW</h3><h3 onclick="math()">AM</h3><h3 onclick="cpr()">CPR</h3> </div>'
 
 
 
-function default_sub(){
-    document.getElementById('subjekts-fill').innerHTML = defaultsub;
+function back(){
+    document.getElementById('subjekts-fill').innerHTML = backin;
+}
+function medt(){
+    document.getElementById('subjekts-fill').innerHTML = medtweb;
 }
 function medt_web(){
     document.getElementById('subjekts-fill').innerHTML = medtweb;
 }
 function medt_aud(){
-    document.getElementById('subjekts-fill').innerHTML = notgiven;
+    document.getElementById('subjekts-fill').innerHTML = medtaud;
 }
-function medt_vid(){
-    document.getElementById('subjekts-fill').innerHTML = notgiven;
+function med_vid(){
+    document.getElementById('subjekts-fill').innerHTML = medtvid;
 }
 function medt_fot(){
-    document.getElementById('subjekts-fill').innerHTML = notgiven;
+    document.getElementById('subjekts-fill').innerHTML = medtfot;
 }
 function syt(){
     document.getElementById('subjekts-fill').innerHTML = notgiven;
@@ -25,6 +34,9 @@ function syt(){
 function sew(){
     document.getElementById('subjekts-fill').innerHTML = notgiven;
 }
-function cprsw(){
+function math(){
+    document.getElementById('subjekts-fill').innerHTML = notgiven;
+}
+function cpr(){
     document.getElementById('subjekts-fill').innerHTML = notgiven;
 }
