@@ -51,12 +51,13 @@ body{
 }
 .sub-list h3{
     padding: 10px 40px;
-    font-size: 2vw;
+    font-size: 2.5vw;
     height: 7vh;
     width: 20vw;
+    display: flex;
     text-align: center;
-    align-self: center;
-    justify-self: center;
+    align-items: center;
+    justify-content: center;
     background-color: #CCC5B9;
 }
 .sub-list h3:hover{
@@ -138,6 +139,56 @@ body{
 .main-content a{
     text-decoration: none;
 }
+.subjekt-main-content{
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    justify-content: center;
+    height: 73vh;
+}
+.subjekt-main-content .subjekt-main-h2{
+    margin-top: 1.5vh;
+    font-size: 3vw;
+    letter-spacing: 0.8vw;
+    text-transform: uppercase;
+    animation: sub 6s 1;
+}
+.subjekt-main-content .subjekt-main-h3{
+    margin-top: 1.5vh;
+    font-size: 2.5vw;
+    letter-spacing: 0.8vw;
+    text-transform: uppercase;
+    animation: link 7s 1;
+}
+.subjekt-main-content .makro-photo{
+    margin-top: 1.5vh;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    height: 40vh;
+    animation: link 7s 1;
+}
+
+@keyframes sub{
+    0%{
+        opacity: 0;
+        letter-spacing: -2vw;
+    }
+    50%{
+        opacity: 0;
+        letter-spacing: -2vw;
+    }
+    
+    70%{
+        letter-spacing: 2.2vw;
+        
+    }
+    85%{opacity: 1;}
+    99%{
+        letter-spacing: 0.8vw;
+    
+    }
+}
+
 @keyframes text{
         0%{
             opacity: 0;
@@ -182,4 +233,3 @@ body{
         background-image: url("../");
     }
 }
-
