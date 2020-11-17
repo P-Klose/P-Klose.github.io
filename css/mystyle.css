@@ -151,29 +151,25 @@ body{
     font-size: 3vw;
     letter-spacing: 0.8vw;
     text-transform: uppercase;
-    animation: sub 6s 1;
+    animation: sub 5s 1;
 }
 .subjekt-main-content .subjekt-main-h3{
     margin-top: 1.5vh;
     font-size: 2.5vw;
     letter-spacing: 0.8vw;
     text-transform: uppercase;
-    animation: link 7s 1;
+    animation: link 5s 1;
 }
 .subjekt-main-content .makro-photo{
     margin-top: 1.5vh;
     font-size: 2.5vw;
     text-transform: uppercase;
     height: 40vh;
-    animation: link 7s 1;
+    animation: link 5s 1;
 }
 
 @keyframes sub{
     0%{
-        opacity: 0;
-        letter-spacing: -2vw;
-    }
-    50%{
         opacity: 0;
         letter-spacing: -2vw;
     }
